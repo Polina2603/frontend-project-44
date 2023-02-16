@@ -1,40 +1,35 @@
 {
-
   "name": "@hexlet/code",
-
   "type": "module",
-
   "version": "1.0.0",
-
   "description": "[![Actions Status](https://github.com/Polina2603/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Polina2603/frontend-project-44/actions)",
-
   "bin": {
-
     "brain-games": "bin/brain-games.js"
-
   },
-
   "main": "index.js",
-
   "scripts": {
-
     "test": "echo \"Error: no test specified\" && exit 1"
-
   },
-
   "author": "",
-
   "license": "ISC",
-
   "dependencies": {
-
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
     "lodash": "^4.17.21",
-
     "publish": "^0.6.0",
-
     "readline-sync": "^1.4.10"
-
-  }
-
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polina2603/frontend-project-44.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Polina2603/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/Polina2603/frontend-project-44#readme"
 }
-
