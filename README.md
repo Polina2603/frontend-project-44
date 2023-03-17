@@ -1,7 +1,9 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Polina2603/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Polina2603/frontend-project-44/actions) <br>
+### Badge CodeClimate
 <a href="https://codeclimate.com/github/Polina2603/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/9546574537b5421ee76c/maintainability" /></a>
 <h1>Brain-Games</h1>
+<p>Simple console Games with basic arithmetics</p>
 <h2>brain-calc</h2>
 <p>Answer "yes" if the number is even, otherwise answer "no".</p>
 <a href="https://asciinema.org/a/YncJNbdQpanrAWCv2eA1teVar" target="_blank"><img src="https://asciinema.org/a/YncJNbdQpanrAWCv2eA1teVar.svg" /></a>
