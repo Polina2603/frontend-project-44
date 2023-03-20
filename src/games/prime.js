@@ -3,6 +3,9 @@ import startGame from '../index.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
+const min = 1;
+const max = 100;
+
 const isPrime = (num) => {
   const sqrtNum = Math.sqrt(num);
   if (num < 2) {
@@ -17,7 +20,7 @@ const isPrime = (num) => {
 };
 
 const generateRound = () => {
-  const question = String(getRandomInt());
+  const question = String(getRandomInt(min, max));
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
