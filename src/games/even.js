@@ -11,4 +11,3 @@ const generateRound = () => {
 };
 
 export default () => startGame(generateRound, rules);
- 
