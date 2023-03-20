@@ -6,7 +6,7 @@ const min = 1;
 const max = 100;
 const operationSigns = ['+', '-', '*'];
 
-const operations = (num1, num2, operation) => {
+const calculate = (num1, num2, operation) => {
   switch (operation) {
     case '+':
       return num1 + num2;
@@ -23,7 +23,7 @@ const generateRound = () => {
   const randomNumber1 = getRandomInt(min, max);
   const randomNumber2 = getRandomInt(min, max);
   const randomOperationSign = operationSigns[getRandomInt(0, operationSigns.length - 1)];
-  const correctAnswer = operations(randomNumber1, randomNumber2, randomOperationSign);
+  const correctAnswer = calculate(randomNumber1, randomNumber2, randomOperationSign);
   const question = `${randomNumber1} ${randomOperationSign} ${randomNumber2} --> `;
   return [question, String(correctAnswer)];
 };
