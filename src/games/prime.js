@@ -7,11 +7,13 @@ const min = 1;
 const max = 100;
 
 const isPrime = (num) => {
-  const sqrtNum = Math.sqrt(num);
-  if (num < 2) {
+  if (num === 1) {
     return false;
   }
-  for (let y = 2; y < sqrtNum; y += 1) {
+  if (num === 2) {
+    return true;
+  }
+  for (let y = 2; y < num; y += 1) {
     if (num % y === 0) {
       return false;
     }
