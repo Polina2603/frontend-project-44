@@ -19,7 +19,7 @@ const calculate = (num1, num2, operation) => {
   }
 };
 
-const generateRound = () => {
+const playCalc = () => {
   const randomNumber1 = getRandomInt(min, max);
   const randomNumber2 = getRandomInt(min, max);
   const randomOperationSign = operationSigns[getRandomInt(0, operationSigns.length - 1)];
@@ -28,4 +28,4 @@ const generateRound = () => {
   return [question, String(correctAnswer)];
 };
 
-export default () => startGame(generateRound, rules);
+export default () => startGame(playCalc, rules);

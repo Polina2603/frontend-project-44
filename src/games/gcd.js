@@ -11,7 +11,7 @@ const findGcd = (num1, num2) => {
   return findGcd(num2, num1 % num2);
 };
 
-const generateRound = () => {
+const playGcd = () => {
   const firstNum = getRandomInt();
   const secondNum = getRandomInt();
   const question = `${firstNum} ${secondNum}`;
@@ -19,4 +19,4 @@ const generateRound = () => {
   return [question, String(correctAnswer)];
 };
 
-export default () => startGame(generateRound, rules);
+export default () => startGame(playGcd, rules);

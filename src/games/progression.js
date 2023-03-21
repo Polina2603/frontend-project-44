@@ -12,7 +12,7 @@ const generateProgression = (firstNumber, step) => {
   return progression;
 };
 
-const generateRound = () => {
+const playProgression = () => {
   const firstNumber = getRandomInt(-10, 10);
   const step = getRandomInt(1, 10);
   const progression = generateProgression(firstNumber, step);
@@ -23,4 +23,4 @@ const generateRound = () => {
   return [question, String(correctAnswer)];
 };
 
-export default () => startGame(generateRound, rules);
+export default () => startGame(playProgression, rules);
